@@ -1,11 +1,32 @@
-b = list(input('Enter your jumping height(m) : '))
-record_list = list(b)
-new_hit = max(b[::])
-for i in b:
-    if i == min(b):
-        print('This number has already been recorded, please enter new value : ')
-    elif i == max(b):
-        print('new record added ! ','new hit by now is : ',new_hit,'m')
+total = 0
+l = []
+while True:
+    number = input("Enter your jumping height(m) : ")
+    if number.isdigit() == max(l):
+        print('new record added ! ','new hit by now is : ',max(l))
+    elif number.isdigit() == min(l) :
+        break
+        print('new record added ! ','new hit by now is : ',min(l))
+    else:
+        l.append(number)
+    total += number
+
+print("The sum is:", total)
 
 
-# ask teacher !
+
+
+
+
+
+
+  
+
+l = []
+while True:
+    i = input('Enter: ')
+    if i.lower() == 'exit' :
+        break
+    else:
+       l.append(i)
+print(l)
